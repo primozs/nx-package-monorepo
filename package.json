@@ -5,8 +5,6 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
-    "@nx/js": "17.2.1",
-    "nx": "17.2.1",
-    "qwik-nx": "^2.0.2"
+    "nx": "17.2.1"
   }
 }
