@@ -1,0 +1,48 @@
+{
+  "name": "nc-vue-button-vite",
+  "author": "Your Name",
+  "description": "A test component library",
+  "keywords": [
+    "vue3",
+    "component",
+    "library"
+  ],
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/nc-vue-button-vite.umd.cjs",
+  "module": "./dist/nc-vue-button-vite.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/nc-vue-button-vite.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/nc-vue-button-vite.umd.cjs"
+      }
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "_build": "vite build && vue-tsc --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.6.4",
+    "vue-tsc": "^1.8.25"
+  }
+}
